@@ -9,6 +9,7 @@ exports.parse = path => {
   const _document = enolib.parse(input, { source: path });
 
   const document = {};
+  document.empty = _document.optionalEmpty('empty') !== null;
   document.field = _document.field('field').requiredStringValue();
   {
     const _fieldset = _document.requiredFieldset('fieldset');
@@ -30,12 +31,12 @@ exports.parse = path => {
 exports[`CLI generates a parser given valid arguments prints the expected stdout/stderr output 1`] = `
 Array [
   Object {
-    "stdout": "Successfully generated javascript target '/home/simon/enocli/specs/temp_output/cli_output.js'.
+    "stdout": "----------
+Successfully generated javascript code at '/home/simon/enocli/specs/temp_output/cli_output.js'.
 
-Usage:
------
+*** Usage ***
 const { parse } = require('/home/simon/enocli/specs/temp_output/cli_output.js'); // require path might need adjustments for your project
-const obj = parse('samples/basic.eno');
+const result = parse('samples/basic.eno');
 ",
   },
   Object {

@@ -4,6 +4,13 @@ exports[`analyze builds an abstract syntax tree from a document 1`] = `
 Object {
   "elements": Array [
     Object {
+      "internalKey": "empty",
+      "key": "empty",
+      "parent": [Circular],
+      "required": true,
+      "type": "empty",
+    },
+    Object {
       "internalKey": "field",
       "key": "field",
       "parent": [Circular],
