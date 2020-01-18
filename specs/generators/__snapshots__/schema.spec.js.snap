@@ -21,6 +21,7 @@ entry: value
 
 @element required
 @key string list
+@values required string
 list:
 
 @element required

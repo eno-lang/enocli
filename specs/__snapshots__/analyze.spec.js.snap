@@ -16,6 +16,7 @@ Object {
       "parent": [Circular],
       "required": true,
       "type": "field",
+      "valueRequired": true,
     },
     Object {
       "entries": Array [
@@ -25,6 +26,7 @@ Object {
           "parent": [Circular],
           "required": true,
           "type": "entry",
+          "valueRequired": true,
         },
       ],
       "internalKey": "fieldset",
@@ -39,6 +41,7 @@ Object {
       "parent": [Circular],
       "required": true,
       "type": "list",
+      "valuesRequired": true,
     },
     Object {
       "elements": Array [
@@ -48,6 +51,7 @@ Object {
           "parent": [Circular],
           "required": true,
           "type": "field",
+          "valueRequired": true,
         },
       ],
       "internalKey": "section",
