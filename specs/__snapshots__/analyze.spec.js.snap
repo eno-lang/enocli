@@ -66,3 +66,82 @@ Object {
   "type": "section",
 }
 `;
+
+exports[`analyze builds an abstract syntax tree from a section-heavy document 1`] = `
+Object {
+  "elements": Array [
+    Object {
+      "elements": Array [
+        Object {
+          "elements": Array [
+            Object {
+              "elements": Array [],
+              "internalKey": "section_depth_3",
+              "key": "section (depth: 3)",
+              "parent": [Circular],
+              "required": true,
+              "type": "section",
+            },
+          ],
+          "internalKey": "section_depth_2",
+          "key": "section (depth: 2)",
+          "parent": [Circular],
+          "required": true,
+          "type": "section",
+        },
+      ],
+      "internalKey": "section_depth_1",
+      "key": "section (depth: 1)",
+      "parent": [Circular],
+      "required": true,
+      "type": "section",
+    },
+    Object {
+      "elements": Array [
+        Object {
+          "elements": Array [
+            Object {
+              "elements": Array [],
+              "internalKey": "section_depth_3",
+              "key": "section (depth: 3)",
+              "parent": [Circular],
+              "required": true,
+              "type": "section",
+            },
+          ],
+          "internalKey": "section_depth_2",
+          "key": "section (depth: 2)",
+          "parent": [Circular],
+          "required": true,
+          "type": "section",
+        },
+        Object {
+          "elements": Array [
+            Object {
+              "elements": Array [],
+              "internalKey": "section_depth_3",
+              "key": "section (depth: 3)",
+              "parent": [Circular],
+              "required": true,
+              "type": "section",
+            },
+          ],
+          "internalKey": "section_depth_2_dup",
+          "key": "section (depth: 2)",
+          "parent": [Circular],
+          "required": true,
+          "type": "section",
+        },
+      ],
+      "internalKey": "section_depth_1_dup",
+      "key": "section (depth: 1)",
+      "parent": [Circular],
+      "required": true,
+      "type": "section",
+    },
+  ],
+  "internalKey": "document",
+  "required": true,
+  "type": "section",
+}
+`;

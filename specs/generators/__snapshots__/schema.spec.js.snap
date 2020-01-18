@@ -1,5 +1,34 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`generateSchema correctly exports section depths 1`] = `
+"@element required
+@key string section_depth_1
+# section (depth: 1)
+@element required
+@key string section_depth_2
+## section (depth: 2)
+@element required
+@key string section_depth_3
+### section (depth: 3)
+
+@element required
+@key string section_depth_1_dup
+# section (depth: 1)
+@element required
+@key string section_depth_2
+## section (depth: 2)
+@element required
+@key string section_depth_3
+### section (depth: 3)
+
+@element required
+@key string section_depth_2_dup
+## section (depth: 2)
+@element required
+@key string section_depth_3
+### section (depth: 3)"
+`;
+
 exports[`generateSchema generates a schema from an abstract syntax tree 1`] = `
 "@element required
 @key string empty
