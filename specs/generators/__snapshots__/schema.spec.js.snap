@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`generateSchema generates a schema from an abstract syntax tree 1`] = `
+"@element required
+@key string empty
+empty
+
+@element required
+@key string field
+@value required string
+field: value
+
+@element required
+@key string fieldset
+fieldset:
+
+@element required
+@key string entry
+@value required string
+entry: value
+
+@element required
+@key string list
+list:
+
+@element required
+@key string section
+# section"
+`;

@@ -1,5 +1,6 @@
-const analyze = require('../lib/analyze');
 const path = require('path');
+
+const analyze = require('../lib/analyze.js');
 
 const DOCUMENT_PATH = path.join(__dirname, 'fixtures/document.eno');
 
