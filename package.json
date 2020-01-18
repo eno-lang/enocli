@@ -1,0 +1,22 @@
+{
+  "author": "Simon Repp <simon@fdpl.io>",
+  "bin": {
+    "enolib": "./bin/enocli.js"
+  },
+  "dependencies": {
+    "enolib": "^0.8.2",
+    "enotype": "^0.3.0",
+    "speakingurl": "^14.0.1"
+  },
+  "devDependencies": {
+    "jest": "^24.9.0"
+  },
+  "description": "An experimental eno command line interface",
+  "license": "MIT",
+  "name": "enocli",
+  "private": true,
+  "scripts": {
+    "test": "jest --watch"
+  },
+  "version": "0.0.0"
+}

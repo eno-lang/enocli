@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`analyze builds an abstract syntax tree from a document 1`] = `
+Object {
+  "elements": Array [
+    Object {
+      "internalKey": "field",
+      "key": "field",
+      "parent": [Circular],
+      "required": true,
+      "type": "field",
+    },
+    Object {
+      "entries": Array [
+        Object {
+          "internalKey": "entry",
+          "key": "entry",
+          "parent": [Circular],
+          "required": true,
+          "type": "entry",
+        },
+      ],
+      "internalKey": "fieldset",
+      "key": "fieldset",
+      "parent": [Circular],
+      "required": true,
+      "type": "fieldset",
+    },
+    Object {
+      "internalKey": "list",
+      "key": "list",
+      "parent": [Circular],
+      "required": true,
+      "type": "list",
+    },
+    Object {
+      "elements": Array [
+        Object {
+          "internalKey": "field",
+          "key": "field",
+          "parent": [Circular],
+          "required": true,
+          "type": "field",
+        },
+      ],
+      "internalKey": "section",
+      "key": "section",
+      "parent": [Circular],
+      "required": true,
+      "type": "section",
+    },
+  ],
+  "internalKey": "document",
+  "required": true,
+  "type": "section",
+}
+`;

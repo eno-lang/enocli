@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CLI generates a parser given valid arguments generates the expected parser code 1`] = `
+"const enolib = require('enolib');
+const fs = require('fs');
+
+exports.parse = path => {
+  const input = fs.readFileSync(path, 'utf-8');
+  const _document = enolib.parse(input, { source: path });
+
+  const document = {};
+  document.field = _document.field('field').requiredStringValue();
+  {
+    const _fieldset = _document.requiredFieldset('fieldset');
+    document.fieldset = {};
+    document.fieldset.entry = _fieldset.entry('entry').requiredStringValue();
+  }
+  document.list = _document.requiredList('list').requiredStringValues();
+  {
+    document.section = {};
+    const _section = _document.requiredSection('section');
+    const section = document.section;
+    section.field = _section.field('field').requiredStringValue();
+  }
+
+  return document;
+};"
+`;
+
+exports[`CLI generates a parser given valid arguments prints the expected stdout/stderr output 1`] = `
+Array [
+  Object {
+    "stdout": "Successfully generated javascript target '/home/simon/enocli/specs/temp_output/cli_output.js'.
+
+Usage:
+-----
+const { parse } = require('/home/simon/enocli/specs/temp_output/cli_output.js'); // require path might need adjustments for your project
+const obj = parse('samples/basic.eno');
+",
+  },
+  Object {
+    "code": 0,
+  },
+]
+`;
