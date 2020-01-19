@@ -1,0 +1,26 @@
+boolean: true
+color: #fff
+date: 2020-01-01
+datetime: 1997-07-07T13:15:30Z
+email: jane.doe@eno-lang.org
+float: 42.0
+integer: 12
+ipv4: 192.168.62.27
+lat_lng: 48.205870, 16.413690
+json: { "json": true }
+url: https://eno-lang.org
+
+float_list:
+- 1
+- 2
+- 2.5
+
+datetime_list:
+- 2020-01-01
+- 1997-07-07T13:15:30Z
+
+json_list:
+- 14
+- true
+- "scalar"
+- { "flexible": true }
