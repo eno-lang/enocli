@@ -18,7 +18,11 @@ Object {
       "type": "field",
       "valueRequired": true,
       "valueTypes": Array [
-        "string",
+        Object {
+          "loader": [Function],
+          "name": "string",
+          "placeholder": "Lorem Ipsum (e.g.)",
+        },
       ],
     },
     Object {
@@ -31,7 +35,11 @@ Object {
           "type": "entry",
           "valueRequired": true,
           "valueTypes": Array [
-            "string",
+            Object {
+              "loader": [Function],
+              "name": "string",
+              "placeholder": "Lorem Ipsum (e.g.)",
+            },
           ],
         },
       ],
@@ -48,7 +56,11 @@ Object {
       "required": true,
       "type": "list",
       "valueTypes": Array [
-        "string",
+        Object {
+          "loader": [Function],
+          "name": "string",
+          "placeholder": "Lorem Ipsum (e.g.)",
+        },
       ],
       "valuesRequired": true,
     },
@@ -62,7 +74,11 @@ Object {
           "type": "field",
           "valueRequired": true,
           "valueTypes": Array [
-            "string",
+            Object {
+              "loader": [Function],
+              "name": "string",
+              "placeholder": "Lorem Ipsum (e.g.)",
+            },
           ],
         },
       ],

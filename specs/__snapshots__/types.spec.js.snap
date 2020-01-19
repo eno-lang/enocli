@@ -11,9 +11,21 @@ Object {
       "type": "field",
       "valueRequired": true,
       "valueTypes": Array [
-        "boolean",
-        "json",
-        "string",
+        Object {
+          "loader": [Function],
+          "name": "boolean",
+          "placeholder": "true (e.g.)",
+        },
+        Object {
+          "loader": [Function],
+          "name": "json",
+          "placeholder": "{ \\"key\\": \\"value\\" } (e.g.)",
+        },
+        Object {
+          "loader": [Function],
+          "name": "string",
+          "placeholder": "Lorem Ipsum (e.g.)",
+        },
       ],
     },
     Object {
@@ -24,8 +36,16 @@ Object {
       "type": "field",
       "valueRequired": true,
       "valueTypes": Array [
-        "color",
-        "string",
+        Object {
+          "loader": [Function],
+          "name": "color",
+          "placeholder": "#fff (e.g.)",
+        },
+        Object {
+          "loader": [Function],
+          "name": "string",
+          "placeholder": "Lorem Ipsum (e.g.)",
+        },
       ],
     },
     Object {
@@ -36,9 +56,21 @@ Object {
       "type": "field",
       "valueRequired": true,
       "valueTypes": Array [
-        "date",
-        "datetime",
-        "string",
+        Object {
+          "loader": [Function],
+          "name": "date",
+          "placeholder": "2020-01-01 (e.g.)",
+        },
+        Object {
+          "loader": [Function],
+          "name": "datetime",
+          "placeholder": "1997-07-07T13:15:30Z (e.g.)",
+        },
+        Object {
+          "loader": [Function],
+          "name": "string",
+          "placeholder": "Lorem Ipsum (e.g.)",
+        },
       ],
     },
     Object {
@@ -49,8 +81,16 @@ Object {
       "type": "field",
       "valueRequired": true,
       "valueTypes": Array [
-        "datetime",
-        "string",
+        Object {
+          "loader": [Function],
+          "name": "datetime",
+          "placeholder": "1997-07-07T13:15:30Z (e.g.)",
+        },
+        Object {
+          "loader": [Function],
+          "name": "string",
+          "placeholder": "Lorem Ipsum (e.g.)",
+        },
       ],
     },
     Object {
@@ -61,8 +101,16 @@ Object {
       "type": "field",
       "valueRequired": true,
       "valueTypes": Array [
-        "email",
-        "string",
+        Object {
+          "loader": [Function],
+          "name": "email",
+          "placeholder": "jane.doe@eno-lang.org (e.g.)",
+        },
+        Object {
+          "loader": [Function],
+          "name": "string",
+          "placeholder": "Lorem Ipsum (e.g.)",
+        },
       ],
     },
     Object {
@@ -73,9 +121,21 @@ Object {
       "type": "field",
       "valueRequired": true,
       "valueTypes": Array [
-        "float",
-        "json",
-        "string",
+        Object {
+          "loader": [Function],
+          "name": "float",
+          "placeholder": "4.83 (e.g.)",
+        },
+        Object {
+          "loader": [Function],
+          "name": "json",
+          "placeholder": "{ \\"key\\": \\"value\\" } (e.g.)",
+        },
+        Object {
+          "loader": [Function],
+          "name": "string",
+          "placeholder": "Lorem Ipsum (e.g.)",
+        },
       ],
     },
     Object {
@@ -86,10 +146,26 @@ Object {
       "type": "field",
       "valueRequired": true,
       "valueTypes": Array [
-        "integer",
-        "float",
-        "json",
-        "string",
+        Object {
+          "loader": [Function],
+          "name": "integer",
+          "placeholder": "14 (e.g.)",
+        },
+        Object {
+          "loader": [Function],
+          "name": "float",
+          "placeholder": "4.83 (e.g.)",
+        },
+        Object {
+          "loader": [Function],
+          "name": "json",
+          "placeholder": "{ \\"key\\": \\"value\\" } (e.g.)",
+        },
+        Object {
+          "loader": [Function],
+          "name": "string",
+          "placeholder": "Lorem Ipsum (e.g.)",
+        },
       ],
     },
     Object {
@@ -100,8 +176,16 @@ Object {
       "type": "field",
       "valueRequired": true,
       "valueTypes": Array [
-        "ipv4",
-        "string",
+        Object {
+          "loader": [Function],
+          "name": "ipv4",
+          "placeholder": "192.168.62.27 (e.g.)",
+        },
+        Object {
+          "loader": [Function],
+          "name": "string",
+          "placeholder": "Lorem Ipsum (e.g.)",
+        },
       ],
     },
     Object {
@@ -112,8 +196,16 @@ Object {
       "type": "field",
       "valueRequired": true,
       "valueTypes": Array [
-        "lat_lng",
-        "string",
+        Object {
+          "loader": [Function],
+          "name": "lat_lng",
+          "placeholder": "48.205870, 16.413690 (e.g.)",
+        },
+        Object {
+          "loader": [Function],
+          "name": "string",
+          "placeholder": "Lorem Ipsum (e.g.)",
+        },
       ],
     },
     Object {
@@ -124,8 +216,16 @@ Object {
       "type": "field",
       "valueRequired": true,
       "valueTypes": Array [
-        "json",
-        "string",
+        Object {
+          "loader": [Function],
+          "name": "json",
+          "placeholder": "{ \\"key\\": \\"value\\" } (e.g.)",
+        },
+        Object {
+          "loader": [Function],
+          "name": "string",
+          "placeholder": "Lorem Ipsum (e.g.)",
+        },
       ],
     },
     Object {
@@ -136,8 +236,16 @@ Object {
       "type": "field",
       "valueRequired": true,
       "valueTypes": Array [
-        "url",
-        "string",
+        Object {
+          "loader": [Function],
+          "name": "url",
+          "placeholder": "https://eno-lang.org (e.g.)",
+        },
+        Object {
+          "loader": [Function],
+          "name": "string",
+          "placeholder": "Lorem Ipsum (e.g.)",
+        },
       ],
     },
     Object {
@@ -147,9 +255,21 @@ Object {
       "required": true,
       "type": "list",
       "valueTypes": Array [
-        "float",
-        "json",
-        "string",
+        Object {
+          "loader": [Function],
+          "name": "float",
+          "placeholder": "4.83 (e.g.)",
+        },
+        Object {
+          "loader": [Function],
+          "name": "json",
+          "placeholder": "{ \\"key\\": \\"value\\" } (e.g.)",
+        },
+        Object {
+          "loader": [Function],
+          "name": "string",
+          "placeholder": "Lorem Ipsum (e.g.)",
+        },
       ],
       "valuesRequired": true,
     },
@@ -160,8 +280,16 @@ Object {
       "required": true,
       "type": "list",
       "valueTypes": Array [
-        "datetime",
-        "string",
+        Object {
+          "loader": [Function],
+          "name": "datetime",
+          "placeholder": "1997-07-07T13:15:30Z (e.g.)",
+        },
+        Object {
+          "loader": [Function],
+          "name": "string",
+          "placeholder": "Lorem Ipsum (e.g.)",
+        },
       ],
       "valuesRequired": true,
     },
@@ -172,8 +300,16 @@ Object {
       "required": true,
       "type": "list",
       "valueTypes": Array [
-        "json",
-        "string",
+        Object {
+          "loader": [Function],
+          "name": "json",
+          "placeholder": "{ \\"key\\": \\"value\\" } (e.g.)",
+        },
+        Object {
+          "loader": [Function],
+          "name": "string",
+          "placeholder": "Lorem Ipsum (e.g.)",
+        },
       ],
       "valuesRequired": true,
     },
