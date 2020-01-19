@@ -1,5 +1,80 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`generateSchema correctly exports inferred types 1`] = `
+"@element required
+@key string boolean
+@value required boolean
+boolean: true (e.g.)
+
+@element required
+@key string color
+@value required color
+color: #fff (e.g.)
+
+@element required
+@key string date
+@value required date
+date: 2020-01-01 (e.g.)
+
+@element required
+@key string datetime
+@value required datetime
+datetime: 1997-07-07T13:15:30Z (e.g.)
+
+@element required
+@key string email
+@value required email
+email: jane.doe@eno-lang.org (e.g.)
+
+@element required
+@key string float
+@value required float
+float: 4.83 (e.g.)
+
+@element required
+@key string integer
+@value required integer
+integer: 14 (e.g.)
+
+@element required
+@key string ipv4
+@value required ipv4
+ipv4: 192.168.62.27 (e.g.)
+
+@element required
+@key string lat_lng
+@value required lat_lng
+lat_lng: 48.205870, 16.413690 (e.g.)
+
+@element required
+@key string json
+@value required json
+json: { \\"key\\": \\"value\\" } (e.g.)
+
+@element required
+@key string url
+@value required url
+url: https://eno-lang.org (e.g.)
+
+@element required
+@key string float_list
+@values required float
+float_list:
+- 4.83 (e.g.)
+
+@element required
+@key string datetime_list
+@values required datetime
+datetime_list:
+- 1997-07-07T13:15:30Z (e.g.)
+
+@element required
+@key string json_list
+@values required json
+json_list:
+- { \\"key\\": \\"value\\" } (e.g.)"
+`;
+
 exports[`generateSchema correctly exports section depths 1`] = `
 "@element required
 @key string section_depth_1
@@ -37,7 +112,7 @@ empty
 @element required
 @key string field
 @value required string
-field: value
+field: Lorem Ipsum (e.g.)
 
 @element required
 @key string fieldset
@@ -46,12 +121,13 @@ fieldset:
 @element required
 @key string entry
 @value required string
-entry: value
+entry: Lorem Ipsum (e.g.)
 
 @element required
 @key string list
 @values required string
 list:
+- Lorem Ipsum (e.g.)
 
 @element required
 @key string section
@@ -59,5 +135,5 @@ list:
 @element required
 @key string field
 @value required string
-field: value"
+field: Lorem Ipsum (e.g.)"
 `;
