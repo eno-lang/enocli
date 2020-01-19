@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`generateJavascript correctly exports inferred types 1`] = `
+"const enolib = require('enolib');
+const enotype = require('enotype');
+const fs = require('fs');
+
+enolib.register(enotype);
+
+exports.parse = path => {
+  const input = fs.readFileSync(path, 'utf-8');
+  const _document = enolib.parse(input, { source: path });
+
+  const document = {};
+  document.boolean = _document.field('boolean').requiredBooleanValue();
+  document.color = _document.field('color').requiredColorValue();
+  document.date = _document.field('date').requiredDateValue();
+  document.datetime = _document.field('datetime').requiredDatetimeValue();
+  document.email = _document.field('email').requiredEmailValue();
+  document.float = _document.field('float').requiredFloatValue();
+  document.integer = _document.field('integer').requiredIntegerValue();
+  document.ipv4 = _document.field('ipv4').requiredIpv4Value();
+  document.latLng = _document.field('lat_lng').requiredLatLngValue();
+  document.json = _document.field('json').requiredJsonValue();
+  document.url = _document.field('url').requiredUrlValue();
+  document.floatList = _document.requiredList('float_list').requiredFloatValues();
+  document.datetimeList = _document.requiredList('datetime_list').requiredDatetimeValues();
+  document.jsonList = _document.requiredList('json_list').requiredJsonValues();
+
+  return document;
+};"
+`;
+
+exports[`generateJavascript generates javascript code from an abstract syntax tree 1`] = `
+"const enolib = require('enolib');
+const enotype = require('enotype');
+const fs = require('fs');
+
+enolib.register(enotype);
+
+exports.parse = path => {
+  const input = fs.readFileSync(path, 'utf-8');
+  const _document = enolib.parse(input, { source: path });
+
+  const document = {};
+  document.empty = _document.optionalEmpty('empty') !== null;
+  document.field = _document.field('field').requiredStringValue();
+  {
+    const _fieldset = _document.requiredFieldset('fieldset');
+    document.fieldset = {};
+    document.fieldset.entry = _fieldset.entry('entry').requiredStringValue();
+  }
+  document.list = _document.requiredList('list').requiredStringValues();
+  {
+    document.section = {};
+    const _section = _document.requiredSection('section');
+    const section = document.section;
+    section.field = _section.field('field').requiredStringValue();
+  }
+
+  return document;
+};"
+`;

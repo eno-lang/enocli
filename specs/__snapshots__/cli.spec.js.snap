@@ -2,7 +2,10 @@
 
 exports[`CLI generates a parser given valid arguments generates the expected parser code 1`] = `
 "const enolib = require('enolib');
+const enotype = require('enotype');
 const fs = require('fs');
+
+enolib.register(enotype);
 
 exports.parse = path => {
   const input = fs.readFileSync(path, 'utf-8');
