@@ -2,13 +2,15 @@
 
 exports[`analyze analyzes possible value types by inference 1`] = `
 Object {
+  "elementRequired": true,
+  "elementType": "section",
   "elements": Array [
     Object {
+      "elementRequired": true,
+      "elementType": "field",
       "internalKey": "boolean",
       "key": "boolean",
       "parent": [Circular],
-      "required": true,
-      "type": "field",
       "valueRequired": true,
       "valueTypes": Array [
         Object {
@@ -29,11 +31,11 @@ Object {
       ],
     },
     Object {
+      "elementRequired": true,
+      "elementType": "field",
       "internalKey": "color",
       "key": "color",
       "parent": [Circular],
-      "required": true,
-      "type": "field",
       "valueRequired": true,
       "valueTypes": Array [
         Object {
@@ -49,11 +51,11 @@ Object {
       ],
     },
     Object {
+      "elementRequired": true,
+      "elementType": "field",
       "internalKey": "date",
       "key": "date",
       "parent": [Circular],
-      "required": true,
-      "type": "field",
       "valueRequired": true,
       "valueTypes": Array [
         Object {
@@ -74,11 +76,11 @@ Object {
       ],
     },
     Object {
+      "elementRequired": true,
+      "elementType": "field",
       "internalKey": "datetime",
       "key": "datetime",
       "parent": [Circular],
-      "required": true,
-      "type": "field",
       "valueRequired": true,
       "valueTypes": Array [
         Object {
@@ -94,11 +96,11 @@ Object {
       ],
     },
     Object {
+      "elementRequired": true,
+      "elementType": "field",
       "internalKey": "email",
       "key": "email",
       "parent": [Circular],
-      "required": true,
-      "type": "field",
       "valueRequired": true,
       "valueTypes": Array [
         Object {
@@ -114,11 +116,11 @@ Object {
       ],
     },
     Object {
+      "elementRequired": true,
+      "elementType": "field",
       "internalKey": "float",
       "key": "float",
       "parent": [Circular],
-      "required": true,
-      "type": "field",
       "valueRequired": true,
       "valueTypes": Array [
         Object {
@@ -139,11 +141,11 @@ Object {
       ],
     },
     Object {
+      "elementRequired": true,
+      "elementType": "field",
       "internalKey": "integer",
       "key": "integer",
       "parent": [Circular],
-      "required": true,
-      "type": "field",
       "valueRequired": true,
       "valueTypes": Array [
         Object {
@@ -169,11 +171,11 @@ Object {
       ],
     },
     Object {
+      "elementRequired": true,
+      "elementType": "field",
       "internalKey": "ipv4",
       "key": "ipv4",
       "parent": [Circular],
-      "required": true,
-      "type": "field",
       "valueRequired": true,
       "valueTypes": Array [
         Object {
@@ -189,11 +191,11 @@ Object {
       ],
     },
     Object {
+      "elementRequired": true,
+      "elementType": "field",
       "internalKey": "lat_lng",
       "key": "lat_lng",
       "parent": [Circular],
-      "required": true,
-      "type": "field",
       "valueRequired": true,
       "valueTypes": Array [
         Object {
@@ -209,11 +211,11 @@ Object {
       ],
     },
     Object {
+      "elementRequired": true,
+      "elementType": "field",
       "internalKey": "json",
       "key": "json",
       "parent": [Circular],
-      "required": true,
-      "type": "field",
       "valueRequired": true,
       "valueTypes": Array [
         Object {
@@ -229,11 +231,11 @@ Object {
       ],
     },
     Object {
+      "elementRequired": true,
+      "elementType": "field",
       "internalKey": "url",
       "key": "url",
       "parent": [Circular],
-      "required": true,
-      "type": "field",
       "valueRequired": true,
       "valueTypes": Array [
         Object {
@@ -249,11 +251,11 @@ Object {
       ],
     },
     Object {
+      "elementRequired": true,
+      "elementType": "list",
       "internalKey": "float_list",
       "key": "float_list",
       "parent": [Circular],
-      "required": true,
-      "type": "list",
       "valueTypes": Array [
         Object {
           "loader": [Function],
@@ -274,11 +276,11 @@ Object {
       "valuesRequired": true,
     },
     Object {
+      "elementRequired": true,
+      "elementType": "list",
       "internalKey": "datetime_list",
       "key": "datetime_list",
       "parent": [Circular],
-      "required": true,
-      "type": "list",
       "valueTypes": Array [
         Object {
           "loader": [Function],
@@ -294,11 +296,11 @@ Object {
       "valuesRequired": true,
     },
     Object {
+      "elementRequired": true,
+      "elementType": "list",
       "internalKey": "json_list",
       "key": "json_list",
       "parent": [Circular],
-      "required": true,
-      "type": "list",
       "valueTypes": Array [
         Object {
           "loader": [Function],
@@ -315,7 +317,5 @@ Object {
     },
   ],
   "internalKey": "document",
-  "required": true,
-  "type": "section",
 }
 `;

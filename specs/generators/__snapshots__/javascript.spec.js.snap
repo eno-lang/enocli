@@ -12,17 +12,17 @@ exports.parse = path => {
   const _document = enolib.parse(input, { source: path });
 
   const document = {};
-  document.boolean = _document.field('boolean').requiredBooleanValue();
-  document.color = _document.field('color').requiredColorValue();
-  document.date = _document.field('date').requiredDateValue();
-  document.datetime = _document.field('datetime').requiredDatetimeValue();
-  document.email = _document.field('email').requiredEmailValue();
-  document.float = _document.field('float').requiredFloatValue();
-  document.integer = _document.field('integer').requiredIntegerValue();
-  document.ipv4 = _document.field('ipv4').requiredIpv4Value();
-  document.latLng = _document.field('lat_lng').requiredLatLngValue();
-  document.json = _document.field('json').requiredJsonValue();
-  document.url = _document.field('url').requiredUrlValue();
+  document.boolean = _document.requiredField('boolean').requiredBooleanValue();
+  document.color = _document.requiredField('color').requiredColorValue();
+  document.date = _document.requiredField('date').requiredDateValue();
+  document.datetime = _document.requiredField('datetime').requiredDatetimeValue();
+  document.email = _document.requiredField('email').requiredEmailValue();
+  document.float = _document.requiredField('float').requiredFloatValue();
+  document.integer = _document.requiredField('integer').requiredIntegerValue();
+  document.ipv4 = _document.requiredField('ipv4').requiredIpv4Value();
+  document.latLng = _document.requiredField('lat_lng').requiredLatLngValue();
+  document.json = _document.requiredField('json').requiredJsonValue();
+  document.url = _document.requiredField('url').requiredUrlValue();
   document.floatList = _document.requiredList('float_list').requiredFloatValues();
   document.datetimeList = _document.requiredList('datetime_list').requiredDatetimeValues();
   document.jsonList = _document.requiredList('json_list').requiredJsonValues();
@@ -43,19 +43,19 @@ exports.parse = path => {
   const _document = enolib.parse(input, { source: path });
 
   const document = {};
-  document.empty = _document.optionalEmpty('empty') !== null;
-  document.field = _document.field('field').requiredStringValue();
+  document.empty = _document.requiredEmpty('empty') !== null;
+  document.field = _document.requiredField('field').requiredStringValue();
   {
     const _fieldset = _document.requiredFieldset('fieldset');
     document.fieldset = {};
-    document.fieldset.entry = _fieldset.entry('entry').requiredStringValue();
+    document.fieldset.entry = _fieldset.requiredEntry('entry').requiredStringValue();
   }
   document.list = _document.requiredList('list').requiredStringValues();
   {
     document.section = {};
     const _section = _document.requiredSection('section');
     const section = document.section;
-    section.field = _section.field('field').requiredStringValue();
+    section.field = _section.requiredField('field').requiredStringValue();
   }
 
   return document;

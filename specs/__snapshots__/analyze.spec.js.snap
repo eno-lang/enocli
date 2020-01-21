@@ -2,20 +2,22 @@
 
 exports[`analyze builds an abstract syntax tree from a document 1`] = `
 Object {
+  "elementRequired": true,
+  "elementType": "section",
   "elements": Array [
     Object {
+      "elementRequired": true,
+      "elementType": "empty",
       "internalKey": "empty",
       "key": "empty",
       "parent": [Circular],
-      "required": true,
-      "type": "empty",
     },
     Object {
+      "elementRequired": true,
+      "elementType": "field",
       "internalKey": "field",
       "key": "field",
       "parent": [Circular],
-      "required": true,
-      "type": "field",
       "valueRequired": true,
       "valueTypes": Array [
         Object {
@@ -26,13 +28,15 @@ Object {
       ],
     },
     Object {
+      "elementRequired": true,
+      "elementType": "fieldset",
       "entries": Array [
         Object {
+          "elementRequired": true,
+          "elementType": "entry",
           "internalKey": "entry",
           "key": "entry",
           "parent": [Circular],
-          "required": true,
-          "type": "entry",
           "valueRequired": true,
           "valueTypes": Array [
             Object {
@@ -46,15 +50,13 @@ Object {
       "internalKey": "fieldset",
       "key": "fieldset",
       "parent": [Circular],
-      "required": true,
-      "type": "fieldset",
     },
     Object {
+      "elementRequired": true,
+      "elementType": "list",
       "internalKey": "list",
       "key": "list",
       "parent": [Circular],
-      "required": true,
-      "type": "list",
       "valueTypes": Array [
         Object {
           "loader": [Function],
@@ -65,13 +67,15 @@ Object {
       "valuesRequired": true,
     },
     Object {
+      "elementRequired": true,
+      "elementType": "section",
       "elements": Array [
         Object {
+          "elementRequired": true,
+          "elementType": "field",
           "internalKey": "field",
           "key": "field",
           "parent": [Circular],
-          "required": true,
-          "type": "field",
           "valueRequired": true,
           "valueTypes": Array [
             Object {
@@ -85,91 +89,87 @@ Object {
       "internalKey": "section",
       "key": "section",
       "parent": [Circular],
-      "required": true,
-      "type": "section",
     },
   ],
   "internalKey": "document",
-  "required": true,
-  "type": "section",
 }
 `;
 
 exports[`analyze builds an abstract syntax tree from a section-heavy document 1`] = `
 Object {
+  "elementRequired": true,
+  "elementType": "section",
   "elements": Array [
     Object {
+      "elementRequired": true,
+      "elementType": "section",
       "elements": Array [
         Object {
+          "elementRequired": true,
+          "elementType": "section",
           "elements": Array [
             Object {
+              "elementRequired": true,
+              "elementType": "section",
               "elements": Array [],
               "internalKey": "section_depth_3",
               "key": "section (depth: 3)",
               "parent": [Circular],
-              "required": true,
-              "type": "section",
             },
           ],
           "internalKey": "section_depth_2",
           "key": "section (depth: 2)",
           "parent": [Circular],
-          "required": true,
-          "type": "section",
         },
       ],
       "internalKey": "section_depth_1",
       "key": "section (depth: 1)",
       "parent": [Circular],
-      "required": true,
-      "type": "section",
     },
     Object {
+      "elementRequired": true,
+      "elementType": "section",
       "elements": Array [
         Object {
+          "elementRequired": true,
+          "elementType": "section",
           "elements": Array [
             Object {
+              "elementRequired": true,
+              "elementType": "section",
               "elements": Array [],
               "internalKey": "section_depth_3",
               "key": "section (depth: 3)",
               "parent": [Circular],
-              "required": true,
-              "type": "section",
             },
           ],
           "internalKey": "section_depth_2",
           "key": "section (depth: 2)",
           "parent": [Circular],
-          "required": true,
-          "type": "section",
         },
         Object {
+          "elementRequired": true,
+          "elementType": "section",
           "elements": Array [
             Object {
+              "elementRequired": true,
+              "elementType": "section",
               "elements": Array [],
               "internalKey": "section_depth_3",
               "key": "section (depth: 3)",
               "parent": [Circular],
-              "required": true,
-              "type": "section",
             },
           ],
           "internalKey": "section_depth_2_dup",
           "key": "section (depth: 2)",
           "parent": [Circular],
-          "required": true,
-          "type": "section",
         },
       ],
       "internalKey": "section_depth_1_dup",
       "key": "section (depth: 1)",
       "parent": [Circular],
-      "required": true,
-      "type": "section",
     },
   ],
   "internalKey": "document",
-  "required": true,
-  "type": "section",
 }
 `;
