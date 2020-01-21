@@ -87,7 +87,7 @@ exports[`generateSchema correctly exports section depths 1`] = `
 ### section (depth: 3)
 
 @element required
-@key string section_depth_1_dup
+@key string section_depth_2
 # section (depth: 1)
 @element required
 @key string section_depth_2
@@ -97,7 +97,7 @@ exports[`generateSchema correctly exports section depths 1`] = `
 ### section (depth: 3)
 
 @element required
-@key string section_depth_2_dup
+@key string section_depth_3
 ## section (depth: 2)
 @element required
 @key string section_depth_3
