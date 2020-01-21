@@ -12,19 +12,19 @@ exports.parse = path => {
   const _document = enolib.parse(input, { source: path });
 
   const document = {};
-  document.empty = _document.optionalEmpty('empty') !== null;
-  document.field = _document.field('field').requiredStringValue();
+  document.empty = _document.requiredEmpty('empty') !== null;
+  document.field = _document.requiredField('field').requiredStringValue();
   {
     const _fieldset = _document.requiredFieldset('fieldset');
     document.fieldset = {};
-    document.fieldset.entry = _fieldset.entry('entry').requiredStringValue();
+    document.fieldset.entry = _fieldset.requiredEntry('entry').requiredStringValue();
   }
   document.list = _document.requiredList('list').requiredStringValues();
   {
     document.section = {};
     const _section = _document.requiredSection('section');
     const section = document.section;
-    section.field = _section.field('field').requiredStringValue();
+    section.field = _section.requiredField('field').requiredStringValue();
   }
 
   return document;
@@ -39,7 +39,7 @@ Successfully generated javascript code at '/home/simon/enocli/specs/temp_output/
 
 *** Usage ***
 const { parse } = require('/home/simon/enocli/specs/temp_output/cli_output.js'); // require path might need adjustments for your project
-const result = parse('samples/basic.eno');
+const result = parse('my_document.eno');
 ",
   },
   Object {
