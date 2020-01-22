@@ -1,0 +1,41 @@
+> @comment optional integer my_empty_comment
+> @element optional
+> @key integer my_empty_key
+empty
+
+> @comment optional integer my_field_comment
+> @element optional
+> @key integer my_field_key
+> @value optional integer my_field_value
+field: value
+
+> @comment optional integer my_fieldset_comment
+> @element optional
+> @key integer my_fieldset_key
+fieldset:
+
+> @comment optional integer my_entry_comment
+> @element optional
+> @key integer my_entry_key
+> @value optional integer my_entry_value
+entry = value
+
+> @comment optional integer my_list_comment
+> @element optional
+> @key integer my_list_key
+> @values optional integer
+list:
+- item
+
+> @comment optional integer my_section_comment
+> @element optional
+> @key integer my_section_key
+# section
+
+> @comment optional integer my_field_comment
+> @element optional
+> @key integer my_field_key
+> @value optional integer my_field_value
+-- field
+value
+-- field

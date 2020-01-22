@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`analyze parses and acts on annotation comments 1`] = `
+Object {
+  "elementRequired": true,
+  "elementType": "section",
+  "elements": Array [
+    Object {
+      "elementRequired": false,
+      "elementType": "empty",
+      "internalKey": "my_empty_key",
+      "key": "empty",
+      "parent": [Circular],
+    },
+    Object {
+      "elementRequired": false,
+      "elementType": "field",
+      "internalKey": "my_field_key",
+      "key": "field",
+      "parent": [Circular],
+      "valueRequired": false,
+      "valueTypes": Array [
+        "integer",
+      ],
+    },
+    Object {
+      "elementRequired": false,
+      "elementType": "fieldset",
+      "entries": Array [
+        Object {
+          "elementRequired": false,
+          "elementType": "entry",
+          "internalKey": "my_entry_key",
+          "key": "entry",
+          "parent": [Circular],
+          "valueRequired": false,
+          "valueTypes": Array [
+            "integer",
+          ],
+        },
+      ],
+      "internalKey": "my_fieldset_key",
+      "key": "fieldset",
+      "parent": [Circular],
+    },
+    Object {
+      "elementRequired": false,
+      "elementType": "list",
+      "internalKey": "my_list_key",
+      "key": "list",
+      "parent": [Circular],
+      "valueTypes": Array [
+        "integer",
+      ],
+      "valuesRequired": false,
+    },
+    Object {
+      "elementRequired": false,
+      "elementType": "section",
+      "elements": Array [
+        Object {
+          "elementRequired": false,
+          "elementType": "field",
+          "internalKey": "my_field_key",
+          "key": "field",
+          "parent": [Circular],
+          "valueRequired": false,
+          "valueTypes": Array [
+            "integer",
+          ],
+        },
+      ],
+      "internalKey": "my_section_key",
+      "key": "section",
+      "parent": [Circular],
+    },
+  ],
+  "internalKey": "document",
+}
+`;
